@@ -70,12 +70,12 @@ export const grupoBimboAggregatedConfig = {
     {
       name: 'predict',
       type: 'numeric',
-      format: ',.4f'
+      format: ',.0f'
     },
     {
       name: 'deviance',
       type: 'numeric',
-      format: ',.4f'
+      format: ',.0f'
     }
   ],
   numericColumns: [
