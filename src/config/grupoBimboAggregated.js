@@ -15,9 +15,9 @@ export const grupoBimboAggregatedConfig = {
   server: 'http://172.16.2.141',
   port: '54321',
   frameIDs: {
-    'drf': 'aggregated_gb_drf_combined_validation_prediction_deviance.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228ab7a',
-    'gbm': 'aggregated_gb_gbm_combined_validation_prediction_deviance.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228ab7a',
-    'glm': 'aggregated_gb_glm_combined_validation_prediction_deviance.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228ab7a',
+    'drf-c6daf49d-dd1f-43b8-9eeb-99bb828d2a25': 'aggregated_gb_drf_combined_validation_prediction_deviance.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228ab7a',
+    'gbm-ef176351-e583-4484-9a08-0f47dc10d4e1': 'aggregated_gb_gbm_combined_validation_prediction_deviance.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228ab7a',
+    'glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3': 'aggregated_gb_glm_combined_validation_prediction_deviance.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228ab7a',
   },
   models: [ 'drf', 'gbm', 'glm'], // will refactor and deprecate
   modelIDs: [
