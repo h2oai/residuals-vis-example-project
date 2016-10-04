@@ -2,7 +2,7 @@ export const grupoBimboAggregatedConfig = {
   // text and page layout
   projectTitle: 'Grupo Bimbo Inventory Demand',
   projectLink: 'https://www.kaggle.com/c/grupo-bimbo-inventory-demand',
-  projectTitleNote: 'Plots are shown for the 10 most important independent variables.',
+  projectTitleNote: '',
   dataText: 'data',
   currentAlgo: 'glm',
   currentAlgoLabel: 'Generalized Linear Model',
@@ -20,11 +20,12 @@ export const grupoBimboAggregatedConfig = {
     'glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3': 'aggregated_gb_glm_combined_validation_prediction_deviance.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228ab7a',
   },
   models: [ 'drf', 'gbm', 'glm'], // will refactor and deprecate
-  modelIDs: [
-    'drf-c6daf49d-dd1f-43b8-9eeb-99bb828d2a25',
-    'gbm-ef176351-e583-4484-9a08-0f47dc10d4e1',
-    'glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3'
-  ],
+  modelIDs: [ 'drf', 'gbm', 'glm'],
+  // modelIDs: [
+  //   'drf-c6daf49d-dd1f-43b8-9eeb-99bb828d2a25',
+  //   'gbm-ef176351-e583-4484-9a08-0f47dc10d4e1',
+  //   'glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3'
+  // ],
   // style marks
   marks: {
     r: 2,
@@ -44,6 +45,8 @@ export const grupoBimboAggregatedConfig = {
       '#ffff99'
     ]
   },
+  yScaleType: 'power',
+  yScaleExponent: 0.2,
   // map columns (features) in the data to visual encodings
   predictColumn: 'predict',
   responseColumn: 'Demanda_uni_equil',
