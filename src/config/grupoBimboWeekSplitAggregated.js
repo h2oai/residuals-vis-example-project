@@ -1,4 +1,4 @@
-export const grupoBimboAggregatedConfig = {
+export const grupoBimboWeekSplitAggregatedConfig = {
   // text and page layout
   projectTitle: 'Grupo Bimbo Inventory Demand',
   projectLink: 'https://www.kaggle.com/c/grupo-bimbo-inventory-demand',
@@ -68,12 +68,12 @@ export const grupoBimboAggregatedConfig = {
       format: ',.0f'
     },
     {
-      name: 'predict',
+      name: 'deviance',
       type: 'numeric',
       format: ',.0f'
     },
     {
-      name: 'deviance',
+      name: 'predict',
       type: 'numeric',
       format: ',.0f'
     }
