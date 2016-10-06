@@ -15,16 +15,16 @@ export const grupoBimboAggregatedConfig = {
   server: 'http://172.16.2.141',
   port: '54321',
   frameIDs: {
-    'drf-c6daf49d-dd1f-43b8-9eeb-99bb828d2a25': 'aggregated_gb_drf_combined_validation_prediction_deviance.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228ab7a',
-    'gbm-ef176351-e583-4484-9a08-0f47dc10d4e1': 'aggregated_gb_gbm_combined_validation_prediction_deviance.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228ab7a',
-    'glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3': 'aggregated_gb_glm_combined_validation_prediction_deviance.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228ab7a',
+    'drf-b08c3eed-0806-4e41-b8f2-4b1d18812af0': 'aggregated_combined-combined-validation.hex-predictions_9b49_drf-b08c3eed-0806-4e41-b8f2-4b1d18812af0_on_validation.hex-deviances_aebb_drf-b08c3eed-0806-4e41-b8f2-4b1d18812af0_on_validation.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228iu7ip',
+    'gbm-a6210942-fe85-4709-b513-576351f70400': 'aggregated_combined-combined-validation.hex-predictions_8182_gbm-a6210942-fe85-4709-b513-576351f70400_on_validation.hex-deviances_ba64_gbm-a6210942-fe85-4709-b513-576351f70400_on_validation.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228iu7ip',
+    'glm-d7208b6f-ae13-4996-8c10-6be359f3e2ae': 'aggregated_combined-combined-validation.hex-predictions_8564_glm-d7208b6f-ae13-4996-8c10-6be359f3e2ae_on_validation.hex-deviances_b3a1_glm-d7208b6f-ae13-4996-8c10-6be359f3e2ae_on_validation.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228iu7ip',
   },
   models: [ 'drf', 'gbm', 'glm'], // will refactor and deprecate
   modelIDs: [ 'drf', 'gbm', 'glm'],
   // modelIDs: [
-  //   'drf-c6daf49d-dd1f-43b8-9eeb-99bb828d2a25',
-  //   'gbm-ef176351-e583-4484-9a08-0f47dc10d4e1',
-  //   'glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3'
+  //   'glm-d7208b6f-ae13-4996-8c10-6be359f3e2ae',
+  //   'drf-b08c3eed-0806-4e41-b8f2-4b1d18812af0',
+  //   'gbm-a6210942-fe85-4709-b513-576351f70400'
   // ],
   // style marks
   marks: {
@@ -53,13 +53,13 @@ export const grupoBimboAggregatedConfig = {
   yColumn: 'deviance',
   idColumn: undefined,
   xColumns: [
-    'Ruta_SAK',
-    'Venta_uni_hoy',
-    'Venta_hoy',
-    'Dev_uni_proxima',
-    'Dev_proxima',
-    'Demanda_uni_equil',
-    'Demanda_uni_equil0'
+    'Ruta_SAK' //,
+    // 'Venta_uni_hoy',
+    // 'Venta_hoy',
+    // 'Dev_uni_proxima',
+    // 'Dev_proxima',
+    // 'Demanda_uni_equil',
+    // 'Demanda_uni_equil0'
   ],
   tooltipColumns: [
     {
@@ -82,12 +82,12 @@ export const grupoBimboAggregatedConfig = {
     'predict',
     'deviance',
     'Ruta_SAK',
-    'Venta_uni_hoy',
-    'Venta_hoy',
-    'Dev_uni_proxima',
-    'Dev_proxima',
-    'Demanda_uni_equil',
-    'Demanda_uni_equil0',
+    // 'Venta_uni_hoy',
+    // 'Venta_hoy',
+    // 'Dev_uni_proxima',
+    // 'Dev_proxima',
+    'Demanda_uni_equil' // ,
+    // 'Demanda_uni_equil0',
   ],
   categoricalColumns: [
     'Agencia_ID',
@@ -99,5 +99,16 @@ export const grupoBimboAggregatedConfig = {
     'NombreProducto',
     'Town',
     'State'
-  ]
+  ],
+  columnAliasLookup: {
+    Ruta_SAK: 'Route_ID',
+    Demanda_uni_equil: 'Adjusted_Demand',
+    Agencia_ID: 'Sales_Depot_ID',
+    Producto_ID: 'Product_ID',
+    Cliente_ID: 'Client_ID',
+    Semana: 'Week_Number',
+    Canal_ID: 'Sales_Channel_ID',
+    NombreCliente: 'Client_Name',
+    NombreProducto: 'Product_Name'
+  }
 }
