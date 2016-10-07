@@ -29,7 +29,7 @@ export const grupoBimboWeekSplitAggregatedConfig = {
   // style marks
   marks: {
     r: 2,
-    fillOpacity: 0.3,
+    fillOpacity: 0.25,
     colors: [
       '#1f78b4',
       '#ff7f00',
