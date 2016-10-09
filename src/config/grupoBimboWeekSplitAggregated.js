@@ -4,8 +4,8 @@ export const grupoBimboWeekSplitAggregatedConfig = {
   projectLink: 'https://www.kaggle.com/c/grupo-bimbo-inventory-demand',
   projectTitleNote: '',
   dataText: 'data',
-  currentAlgo: 'glm',
-  currentAlgoLabel: 'Generalized Linear Model',
+  currentAlgo: 'drf',
+  currentAlgoLabel: 'Distributed Random Forest',
   // boxplot config
   sortBoxplots: 'rootMeanSquaredValue',
   skeletonBox: true,
@@ -26,6 +26,35 @@ export const grupoBimboWeekSplitAggregatedConfig = {
   //   'drf-b08c3eed-0806-4e41-b8f2-4b1d18812af0',
   //   'gbm-a6210942-fe85-4709-b513-576351f70400'
   // ],
+  modelMetrics: {
+    'drf': {
+      mse: 283.921359,
+      rmse: 16.849966,
+      nobs: 10408713,
+      r2: 0.408106,
+      mean_residual_deviance: 283.921359,
+      mae: 4.587290,
+      rmsle: 0.681242
+    },
+    'gbm': {
+      mse: 305.511036,
+      rmse: 17.478874,
+      nobs: 10408713,
+      r2: 0.363098,
+      mean_residual_deviance: 305.511036,
+      mae: 5.128533,
+      rmsle: NaN
+    },
+    'glm': {
+      mse: 365.889846,
+      rmse: 19.128247,
+      nobs: 10408713,
+      r2: 0.237226,
+      mean_residual_deviance: 365.889846,
+      mae: 5.083115,
+      rmsle: NaN
+    }
+  },
   // style marks
   marks: {
     r: 2,

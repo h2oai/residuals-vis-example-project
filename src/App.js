@@ -4,7 +4,8 @@ import { ResidualsVis } from 'residualsVis';
 // import { rossmanAggregatedConfig } from './config/rossmanAggregated';
 // import { santanderAggregatedConfig } from './config/santanderAggregated';
 // import { grupoBimboNaiveAggregatedConfig } from './config/grupoBimboNaiveAggregated';
-import { grupoBimboWeekSplitAggregatedConfig } from './config/grupoBimboWeekSplitAggregated';
+// import { grupoBimboWeekSplitAggregatedConfig } from './config/grupoBimboWeekSplitAggregated';
+import { grupoBimboDmitryFeaturesConfig } from './config/grupoBimboDmitryFeatures';
 
 // load datasets from local files
 // import { gbGLMAggregated05 } from './data/gb-glm-aggregated-0-05';
@@ -15,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ResidualsVis config={grupoBimboWeekSplitAggregatedConfig}/>
+        <ResidualsVis config={grupoBimboDmitryFeaturesConfig}/>
         {/*
         <ResidualsVis config={grupoBimboNaiveAggregatedConfig} datasets={[
           gbGLMAggregated05,
