@@ -88,7 +88,17 @@ export const wineConfig = {
   yColumn: 'deviance',
   idColumn: undefined,
   xColumns: [
-    'fixed acidity'
+    "fixed acidity",
+    "volatile acidity",
+    "citric acid",
+    "residual sugar",
+    "chlorides",
+    "free sulfur dioxide",
+    "total sulfur dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol"
   ],
   tooltipColumns: [
     {
@@ -111,7 +121,17 @@ export const wineConfig = {
     'quality',
     "predict",
     "deviance",
-    "fixed acidity"
+    "fixed acidity",
+    "volatile acidity",
+    "citric acid",
+    "residual sugar",
+    "chlorides",
+    "free sulfur dioxide",
+    "total sulfur dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol"
   ],
   categoricalColumns: []
 }
