@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ResidualsVis } from 'residualsVis';
+import { ResidualsVis } from 'residuals-vis';
 
 // import { rossmanAggregatedConfig } from './config/rossmanAggregated';
 // import { santanderAggregatedConfig } from './config/santanderAggregated';
