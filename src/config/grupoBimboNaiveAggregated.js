@@ -26,6 +26,44 @@ export const grupoBimboNaiveAggregatedConfig = {
   //   'gbm-ef176351-e583-4484-9a08-0f47dc10d4e1',
   //   'glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3'
   // ],
+  modelMetrics: {
+    'drf': {
+      mse: 0.216931,
+      rmse: 'N/A',
+      nobs: 10408713,
+      r2: 0.691941,
+      mean_residual_deviance: 0.216931,
+      mae: 0.346815,
+      rmsle: 0.465758
+    },
+    'gbm': {
+      mse: 0.232333,
+      rmse: 'N/A',
+      nobs: 10408713,
+      r2: 0.670069,
+      mean_residual_deviance: 0.232333,
+      mae: 0.360219,
+      rmsle: 0.482009 
+    },
+    'glm': {
+      mse: 0.266251,
+      rmse: 'N/A',
+      nobs: 10408713,
+      r2: 0.621903,
+      mean_residual_deviance: 0.266251,
+      mae: 0.387898,
+      rmsle: 0.515995
+    },
+    'dl': {
+      mse: 0.266251,
+      rmse: 'N/A',
+      nobs: 10408713,
+      r2: 0.621903,
+      mean_residual_deviance: 0.266251,
+      mae: 0.387898,
+      rmsle: 0.515995
+    }
+  },
   // style marks
   marks: {
     r: 2,
@@ -62,11 +100,6 @@ export const grupoBimboNaiveAggregatedConfig = {
     'Demanda_uni_equil0'
   ],
   tooltipColumns: [
-    {
-      name: 'Demanda_uni_equil',
-      type: 'numeric',
-      format: ',.0f'
-    },
     {
       name: 'predict',
       type: 'numeric',
