@@ -12,8 +12,8 @@ export const grupoBimboDmitryFeaturesConfig = {
   // data attributes. this determines what sort of transition is shown.  will deprecate.
   aggregated: true,
   // API config for normal client-server mode
-  server: 'http://172.16.2.141',
-  port: '54321',
+  server: 'http://192.168.0.106/',
+  port: '55555',
   frameIDs: {
     'drf-460f78d7-e5e3-4ea7-8a08-b877de724119': 'aggregated_combined-combined-Bimbo_valid_processed.hex-predictions_99ce_drf-460f78d7-e5e3-4ea7-8a08-b877de724119_on_Bimbo_valid_processed.hex-deviances_86b2_drf-460f78d7-e5e3-4ea7-8a08-b877de724119_on_Bimbo_valid_processed.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228iu7ip',
     'gbm-9a8e7868-3689-4f51-bdc6-5ea068478094': 'aggregated_combined-combined-Bimbo_valid_processed.hex-predictions_9948_gbm-9a8e7868-3689-4f51-bdc6-5ea068478094_on_Bimbo_valid_processed.hex-deviances_8053_gbm-9a8e7868-3689-4f51-bdc6-5ea068478094_on_Bimbo_valid_processed.hex_by_aggregator-b4209a31-b303-4e9d-89b7-cdd11228iu7ip',
