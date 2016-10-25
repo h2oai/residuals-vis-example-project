@@ -1,0 +1,64 @@
+import React, { Component } from 'react';
+import { ResidualsVis } from 'residuals-vis';
+
+// import { rossmanAggregatedConfig } from './config/rossmanAggregated';
+// import { rossmanRandomAggregatedConfig } from './config/rossmanRandomAggregated';
+// import { santanderAggregatedConfig } from './config/santanderAggregated';
+import { grupoBimboNaiveAggregatedConfig } from './config/grupoBimboNaiveAggregated';
+import { grupoBimboDmitryFeaturesConfig } from './config/grupoBimboDmitryFeatures';
+// import { wineConfig } from './config/wine_quality.js';
+// import { grupoBimboWeekSplitAggregatedConfig } from './config/grupoBimboWeekSplitAggregated';
+
+
+//load datasets from local files
+import { gbGLMAggregated05 } from './data/gb-glm-aggregated-0-05';
+import { gbDRFAggregated05 } from './data/gb-drf-aggregated-0-05';
+import { gbGBMAggregated05 } from './data/gb-gbm-aggregated-0-05';
+
+//load datasets from local files
+import { gbEfDRFAggregated8 }     from './data/gb-ef-drf-c70bb027-a911-4f67-a754-bb25c31f7ae8-aggregated-0-8';
+import { gbEfGBM2000Aggregated8 } from './data/gb-ef-gbm-5933fc16-fb84-4d92-9859-831f62244660-aggregated-0-8';
+import { gbEfGBM50Aggregated8 }   from './data/gb-ef-gbm-6453814e-3bfb-4764-b409-b29787447183-aggregated-0-8';
+import { gbEfGBM1000Aggregated8 } from './data/gb-ef-gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8-aggregated-0-8';
+import { gbEfGLMAggregated8 }     from './data/gb-ef-glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5-aggregated-0-8';
+
+//load datasets from local files
+// import { glmWine } from './data/glm-wine-predictions-deviances';
+// import { drfWine } from './data/drf-wine-predictions-deviances';
+// import { gbmWine } from './data/gbm-wine-predictions-deviances';
+// import { dlWine } from './data/dl-wine-predictions-deviances';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        {/* <ResidualsVis config={rossmanRandomAggregatedConfig}/> */}
+        
+        {/* <ResidualsVis config={wineConfig} datasets={[
+          glmWine,
+          drfWine,
+          gbmWine,  
+          dlWine
+        ]}/> */}
+        
+        {/*<ResidualsVis config={grupoBimboNaiveAggregatedConfig} datasets={[
+          gbGLMAggregated05,
+          gbDRFAggregated05,
+          gbGBMAggregated05
+        ]}/>*/}
+
+        <ResidualsVis config={grupoBimboDmitryFeaturesConfig} datasets={[
+          gbEfDRFAggregated8,
+          gbEfGBM2000Aggregated8,
+          gbEfGBM50Aggregated8,
+          gbEfGBM1000Aggregated8,
+          gbEfGLMAggregated8
+        ]}/>    
+      </div>
+    );
+  }
+}
+
+export default App;
+
+

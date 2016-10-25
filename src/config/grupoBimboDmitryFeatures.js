@@ -3,7 +3,7 @@ export const grupoBimboDmitryFeaturesConfig = {
   projectTitle: 'Grupo Bimbo Inventory Demand',
   projectLink: 'https://www.kaggle.com/c/grupo-bimbo-inventory-demand',
   projectTitleNote: '',
-  dataText: 'data',
+  dataText: 'features engineered with data',
   currentAlgo: 'drf',
   currentAlgoLabel: 'Distributed Random Forest',
   // boxplot config

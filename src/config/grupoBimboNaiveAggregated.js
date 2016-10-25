@@ -96,8 +96,7 @@ export const grupoBimboNaiveAggregatedConfig = {
     'Venta_hoy',
     'Dev_uni_proxima',
     'Dev_proxima',
-    'Demanda_uni_equil',
-    'Demanda_uni_equil0'
+    'Demanda_uni_equil'
   ],
   tooltipColumns: [
     {
@@ -132,5 +131,20 @@ export const grupoBimboNaiveAggregatedConfig = {
     'NombreProducto',
     'Town',
     'State'
-  ]
+  ],
+  columnAliasLookup: {
+    Ruta_SAK: 'Route_ID',
+    Demanda_uni_equil: 'Adjusted_Demand',
+    Agencia_ID: 'Sales_Depot_ID',
+    Producto_ID: 'Product_ID',
+    Cliente_ID: 'Client_ID',
+    Semana: 'Week_Number',
+    Canal_ID: 'Sales_Channel_ID',
+    NombreCliente: 'Client_Name',
+    NombreProducto: 'Product_Name',
+    Venta_uni_hoy: 'Units_Sold_This_Week',
+    Venta_hoy: 'Sales_This_Week',
+    Dev_uni_proxima: 'Units_Returned_Next_Week',
+    Dev_proxima: 'Returns_Next_Week',
+  }
 }
