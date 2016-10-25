@@ -4,8 +4,8 @@ export const grupoBimboNaiveAggregatedConfig = {
   projectLink: 'https://www.kaggle.com/c/grupo-bimbo-inventory-demand',
   projectTitleNote: '',
   dataText: 'data',
-  currentAlgo: 'drf',
-  currentAlgoLabel: 'Distributed Random Forest',
+  currentAlgo: 'glm',
+  currentAlgoLabel: 'Generalized Linear Model',
   // boxplot config
   sortBoxplots: 'rootMeanSquaredValue',
   skeletonBox: true,
@@ -82,12 +82,11 @@ export const grupoBimboNaiveAggregatedConfig = {
   yColumn: 'deviance',
   idColumn: undefined,
   xColumns: [
-    'Ruta_SAK',
     'Venta_uni_hoy',
     'Venta_hoy',
-    'Dev_uni_proxima',
+    'Ruta_SAK',
     'Dev_proxima',
-    'Demanda_uni_equil'
+    'Dev_uni_proxima'
   ],
   tooltipColumns: [
     {

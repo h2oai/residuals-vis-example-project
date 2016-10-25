@@ -68,18 +68,8 @@ export const wineConfig = {
     r: 2,
     fillOpacity: 0.3,
     colors: [
-      '#1f78b4',
-      '#ff7f00',
-      '#33a02c',
-      '#e31a1c',
-      '#6a3d9a',
-      '#b15928',
-      '#a6cee3',
-      '#fdbf6f',
-      '#b2df8a',
-      '#fb9a99',
-      '#cab2d6',
-      '#ffff99'
+      '#B96579',
+      '#E8DDB7',
     ]
   },
   // map columns (features) in the data to visual encodings
@@ -88,17 +78,17 @@ export const wineConfig = {
   yColumn: 'deviance',
   idColumn: undefined,
   xColumns: [
-    "fixed acidity",
-    "volatile acidity",
-    "citric acid",
-    "residual sugar",
-    "chlorides",
-    "free sulfur dioxide",
-    "total sulfur dioxide",
+    "alcohol",
     "density",
-    "pH",
+    "volatile acidity",
+    "free sulfur dioxide",
+    "chlorides",
     "sulphates",
-    "alcohol"
+    "pH",
+    "residual sugar",
+    "total sulfur dioxide",
+    "citric acid",
+    "fixed acidity"
   ],
   tooltipColumns: [
     {
@@ -118,21 +108,23 @@ export const wineConfig = {
     }
   ],
   numericColumns: [
+    "alcohol",
+    "density",
+    "volatile acidity",
+    "free sulfur dioxide",
+    "chlorides",
+    "sulphates",
+    "pH",
+    "residual sugar",
+    "total sulfur dioxide",
+    "citric acid",
+    "fixed acidity",
     'quality',
     "predict",
-    "deviance",
-    "fixed acidity",
-    "volatile acidity",
-    "citric acid",
-    "residual sugar",
-    "chlorides",
-    "free sulfur dioxide",
-    "total sulfur dioxide",
-    "density",
-    "pH",
-    "sulphates",
-    "alcohol"
+    "deviance"
   ],
-  categoricalColumns: [],
+  categoricalColumns: [
+    'color'
+  ],
   columnAliasLookup: {}
 }
