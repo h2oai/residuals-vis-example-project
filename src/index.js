@@ -5,6 +5,7 @@ import App from './App';
 import Home from './Home';
 import GBRawFeatures from './GBRawFeatures';
 import GBEngFeatures from './GBEngFeatures';
+import Wine from './Wine';
 import './index.css';
 import './bootstrap.min.css';
 
@@ -14,6 +15,7 @@ render((
       <IndexRoute component={Home}/>
       <Route path="/gb-raw-features" component={GBRawFeatures}/>
       <Route path="/gb-eng-features" component={GBEngFeatures}/>
+      <Route path="/wine" component={Wine}/>
     </Route>
   </Router>
 ), document.getElementById('root'))

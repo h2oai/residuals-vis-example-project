@@ -4,8 +4,8 @@ export const grupoBimboNaiveAggregatedConfig = {
   projectLink: 'https://www.kaggle.com/c/grupo-bimbo-inventory-demand',
   projectTitleNote: '',
   dataText: 'data',
-  currentAlgo: 'glm',
-  currentAlgoLabel: 'Generalized Linear Model',
+  currentAlgo: 'drf',
+  currentAlgoLabel: 'Distributed Random Forest',
   // boxplot config
   sortBoxplots: 'rootMeanSquaredValue',
   skeletonBox: true,
@@ -26,42 +26,33 @@ export const grupoBimboNaiveAggregatedConfig = {
   //   'gbm-ef176351-e583-4484-9a08-0f47dc10d4e1',
   //   'glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3'
   // ],
-  modelMetrics: {
-    'drf': {
-      mse: 0.216931,
-      rmse: 'N/A',
-      nobs: 10408713,
-      r2: 0.691941,
-      mean_residual_deviance: 0.216931,
-      mae: 0.346815,
-      rmsle: 0.465758
+  "modelMetrics": {
+    "gbm": {
+      "mse": 0.212821,
+      "rmse": 0.461326,
+      "nobs": '18,545,035',
+      "r2": 0.999546,
+      "mean_residual_deviance": 0.21282,
+      "mae": 0.095809,
+      "rmsle": 'N/A' // "NaN"
     },
-    'gbm': {
-      mse: 0.232333,
-      rmse: 'N/A',
-      nobs: 10408713,
-      r2: 0.670069,
-      mean_residual_deviance: 0.232333,
-      mae: 0.360219,
-      rmsle: 0.482009 
+    "drf": {
+      "mse": 1.474409,
+      "rmse": 1.21425,
+      "nobs": '18,545,035',
+      "r2": 0.996856,
+      "mean_residual_deviance": 1.474409,
+      "mae": 0.14428,
+      "rmsle": 'N/A' // 0.066232c
     },
-    'glm': {
-      mse: 0.266251,
-      rmse: 'N/A',
-      nobs: 10408713,
-      r2: 0.621903,
-      mean_residual_deviance: 0.266251,
-      mae: 0.387898,
-      rmsle: 0.515995
-    },
-    'dl': {
-      mse: 0.266251,
-      rmse: 'N/A',
-      nobs: 10408713,
-      r2: 0.621903,
-      mean_residual_deviance: 0.266251,
-      mae: 0.387898,
-      rmsle: 0.515995
+    "glm": {
+      "mse": 1.805560,
+      "rmse": 1.343711,
+      "nobs": '18,545,035',
+      "r2": 0.99615,
+      "mean_residual_deviance": 1.80556,
+      "mae": 0.28702,
+      "rmsle": 'N/A' // "NaN"
     }
   },
   // style marks

@@ -30,7 +30,7 @@ export const grupoBimboDmitryFeaturesConfig = {
     'drf': {
       mse: 0.216931,
       rmse: 'N/A',
-      nobs: 10408713,
+      nobs: '10,408,713',
       r2: 0.691941,
       mean_residual_deviance: 0.216931,
       mae: 0.346815,
@@ -39,7 +39,7 @@ export const grupoBimboDmitryFeaturesConfig = {
     'gbm': {
       mse: 0.232333,
       rmse: 'N/A',
-      nobs: 10408713,
+      nobs: '10,408,713',
       r2: 0.670069,
       mean_residual_deviance: 0.232333,
       mae: 0.360219,
@@ -48,7 +48,7 @@ export const grupoBimboDmitryFeaturesConfig = {
     'glm': {
       mse: 0.266251,
       rmse: 'N/A',
-      nobs: 10408713,
+      nobs: '10,408,713',
       r2: 0.621903,
       mean_residual_deviance: 0.266251,
       mae: 0.387898,

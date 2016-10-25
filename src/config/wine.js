@@ -1,6 +1,6 @@
 export const wineConfig = {
   // text and page layout
-  projectTitle: 'Wine Quality Data',
+  projectTitle: 'Wine Quality',
   projectLink: '',
   projectTitleNote: '',
   dataText: 'data',
@@ -21,46 +21,46 @@ export const wineConfig = {
     "glm": "combined-combined-predictions_805f_glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9_on_validation_wine_0.25-deviances_9e66_glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9_on_validation_wine_0.25-validation_wine_0.25"
   },
   // file access config for local mode
-  project: 'santander-customer-satisfaction',
-  fileSuffix: '-aggregated-0-002',
+  project: 'wine',
+  fileSuffix: '',
   models: ['dl', 'drf', 'gbm', 'glm'], // will refactor and deprecate
   modelIDs: ['dl', 'drf', 'gbm', 'glm'], // will refactor and deprecate
   modelMetrics: {
-    'drf': {
-      mse: 0.216931,
-      rmse: 'N/A',
-      nobs: 10408713,
-      r2: 0.691941,
-      mean_residual_deviance: 0.216931,
-      mae: 0.346815,
-      rmsle: 0.465758
+    "dl": {
+      "mse": 0.483164207191617,
+      "rmse": 0.695100141844049,
+      "nobs": 1672,
+      "r2": 0.4093913455456957,
+      "mean_residual_deviance": 0.483164207191617,
+      "mae": 0.5414414154729464,
+      "rmsle": 0.10422435160601286
     },
-    'gbm': {
-      mse: 0.232333,
-      rmse: 'N/A',
-      nobs: 10408713,
-      r2: 0.670069,
-      mean_residual_deviance: 0.232333,
-      mae: 0.360219,
-      rmsle: 0.482009 
+    "drf": {
+      "mse": 0.38742471822295227,
+      "rmse": 0.6224345091838597,
+      "nobs": 1672,
+      "r2": 0.5264210632199209,
+      "mean_residual_deviance": 0.38742471822295227,
+      "mae": 0.4469004780253722,
+      "rmsle": 0.09525256046951894
     },
-    'glm': {
-      mse: 0.266251,
-      rmse: 'N/A',
-      nobs: 10408713,
-      r2: 0.621903,
-      mean_residual_deviance: 0.266251,
-      mae: 0.387898,
-      rmsle: 0.515995
+    "gbm": {
+      "mse": 0.4538429087495994,
+      "rmse": 0.673678639077713,
+      "nobs": 1672,
+      "r2": 0.4452330166834445,
+      "mean_residual_deviance": 0.4538429087495994,
+      "mae": 0.52117533920514,
+      "rmsle": 0.10205624077961499
     },
-    'dl': {
-      mse: 0.266251,
-      rmse: 'N/A',
-      nobs: 10408713,
-      r2: 0.621903,
-      mean_residual_deviance: 0.266251,
-      mae: 0.387898,
-      rmsle: 0.515995
+    "glm": {
+      "mse": 0.5559913883311636,
+      "rmse": 0.745648300696222,
+      "nobs": 1672,
+      "r2": 0.3203690984083589,
+      "mean_residual_deviance": 0.5559913883311636,
+      "mae": 0.5828780753588723,
+      "rmsle": 0.11200531733347978
     }
   },
   // style marks
@@ -133,5 +133,6 @@ export const wineConfig = {
     "sulphates",
     "alcohol"
   ],
-  categoricalColumns: []
+  categoricalColumns: [],
+  columnAliasLookup: {}
 }

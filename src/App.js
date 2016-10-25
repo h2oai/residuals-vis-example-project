@@ -27,6 +27,9 @@ export default React.createClass({
           <div style={{ paddingRight: '20px'}}>
             <span><NavLink to="/gb-eng-features">GBEngFeatures</NavLink></span>
           </div>
+          <div style={{ paddingRight: '20px'}}>
+            <span><NavLink to="/wine">Wine</NavLink></span>
+          </div>
         </div>
         {this.props.children}
       </div>
