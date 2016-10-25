@@ -1,7 +1,7 @@
 export const wineConfig = {
   // text and page layout
   projectTitle: 'Wine Quality',
-  projectLink: '',
+  projectLink: 'https://archive.ics.uci.edu/ml/datasets/Wine+Quality',
   projectTitleNote: '',
   dataText: 'data',
   currentAlgo: 'dl',

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { ResidualsVis } from 'residuals-vis';
 import { grupoBimboNaiveAggregatedConfig } from './config/grupoBimboNaiveAggregated';
 
