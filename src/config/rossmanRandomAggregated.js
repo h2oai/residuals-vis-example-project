@@ -5,7 +5,7 @@ export const rossmanRandomAggregatedConfig = {
   models: [ 'gbm', 'drf', 'glm'],
   modelIDs: [ 'gbm', 'drf', 'glm'],
   currentAlgo: 'drf',
-  currentAlgoLabel: 'Distributed Random Forest',
+  currentModelLabel: 'Distributed Random Forest',
   project: 'rossman-store-sales',
   fileSuffix: '-aggregated-0-125',
   aggregated: true,

@@ -5,7 +5,7 @@ export const santanderAggregatedConfig = {
   projectTitleNote: 'Plots are shown for the 10 most important independent variables.',
   dataText: 'data',
   currentAlgo: 'dl',
-  currentAlgoLabel: 'Deep Learning',
+  currentModelLabel: 'Deep Learning',
   // boxplot config
   sortBoxplots: 'rootMeanSquaredValue',
   skeletonBox: true,

@@ -4,7 +4,7 @@ export const rossmanAggregatedConfig = {
   dataText: 'data',
   models: [ 'dl', 'drf', 'gbm', 'glm'],
   currentAlgo: 'dl',
-  currentAlgoLabel: 'Deep Learning',
+  currentModelLabel: 'Deep Learning',
   project: 'rossman-store-sales',
   fileSuffix: '-aggregated-0-125',
   aggregated: true,

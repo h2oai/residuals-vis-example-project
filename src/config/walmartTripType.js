@@ -5,7 +5,7 @@ export const walmartTripTypeConfig = {
   dataText: 'data',
   models: ['dl'], // , 'drf', 'gbm', 'glm'],
   currentAlgo: 'dl',
-  currentAlgoLabel: 'Deep Learning',
+  currentModelLabel: 'Deep Learning',
 
   project: 'walmart-trip-type',
   predictColumn: 'predict',

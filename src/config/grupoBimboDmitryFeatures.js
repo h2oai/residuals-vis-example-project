@@ -5,7 +5,7 @@ export const grupoBimboDmitryFeaturesConfig = {
   projectTitleNote: '',
   dataText: 'features engineered with data',
   currentAlgo: 'glm',
-  currentAlgoLabel: 'Generalized Linear Model',
+  currentModelLabel: 'Generalized Linear Model',
   // boxplot config
   sortBoxplots: 'rootMeanSquaredValue',
   skeletonBox: true,
