@@ -4,7 +4,7 @@ export const rossmanConfig = {
   dataText: 'a 20,000 row subset of the data',
   models: [ 'dl', 'drf', 'gbm', 'glm'],
   currentAlgo: 'glm',
-  currentAlgoLabel: 'Generalized Linear Model',
+  currentModelLabel: 'Generalized Linear Model',
   project: 'rossman-store-sales',
   fileSuffix: '-20k',
   predictColumn: 'glmPredict',

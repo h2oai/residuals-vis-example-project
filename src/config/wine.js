@@ -5,7 +5,7 @@ export const wineConfig = {
   projectTitleNote: '',
   dataText: 'data',
   currentAlgo: 'dl',
-  currentAlgoLabel: 'Deep Learning',
+  currentModelLabel: 'Deep Learning',
   // boxplot config
   sortBoxplots: 'rootMeanSquaredValue',
   skeletonBox: true,

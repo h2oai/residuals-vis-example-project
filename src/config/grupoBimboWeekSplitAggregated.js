@@ -5,7 +5,7 @@ export const grupoBimboWeekSplitAggregatedConfig = {
   projectTitleNote: '',
   dataText: 'data',
   currentAlgo: 'drf',
-  currentAlgoLabel: 'Distributed Random Forest',
+  currentModelLabel: 'Distributed Random Forest',
   // boxplot config
   sortBoxplots: 'rootMeanSquaredValue',
   skeletonBox: true,
