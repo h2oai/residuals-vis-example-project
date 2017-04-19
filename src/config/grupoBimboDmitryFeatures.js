@@ -78,7 +78,7 @@ export const grupoBimboDmitryFeaturesConfig = {
   yScaleExponent: 0.2,
   // map columns (features) in the data to visual encodings
   predictColumn: 'predict',
-  responseColumn: 'target',
+  responseColumn: 'target', // read from the model object in flow
   yColumn: 'deviance',
   idColumn: 'id',
   xColumns: [
@@ -191,7 +191,7 @@ export const grupoBimboDmitryFeaturesConfig = {
     'has_multigrain',
     'trIn'
   ],
-  columnAliasLookup: {
+  columnAliasLookup: { // this is possible on parse in Flow
     Ruta_SAK: 'Route_ID',
     Demanda_uni_equil: 'Adjusted_Demand',
     Agencia_ID: 'Sales_Depot_ID',
